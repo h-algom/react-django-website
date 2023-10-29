@@ -8,7 +8,7 @@ export const LoginHook = () => {
     const { dispatch } = useContext(AuthContext);
 
     const signin = async (email, password) => {
-        const BACKEND_URL = process.env.BACKEND_URL + 'auth/login';
+        const BACKEND_URL = process.env.BACKEND_URL + "auth/login";
 
         setLoading(true);
         setError(null);

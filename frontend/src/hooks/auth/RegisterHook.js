@@ -8,7 +8,7 @@ export const RegisterHook = () => {
     const { dispatch } = useContext(AuthContext);
 
     const signup = async (email, password) => {
-        const BACKEND_URL = process.env.BACKEND_URL + 'auth/register';
+        const BACKEND_URL = process.env.BACKEND_URL + "auth/register";
 
         setLoading(true);
         setError(null);
