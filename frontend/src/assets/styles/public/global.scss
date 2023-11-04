@@ -115,7 +115,7 @@ button {
         padding: 1.5rem 3.25rem;
 
         .site-logo{
-            font-size: 1.3rem;
+            font-size: 1.4rem;
         }
 
         .nav-links {
@@ -126,12 +126,12 @@ button {
 
 .footer-wrapper {
     width: 100%;
-    background: theme.$black-09-variant;
-    color: theme.$white-variant;
+    background: theme.$grey-ee-variant;
+    color: theme.$black-fixed;
 
     .footer-top-wrapper {
         width: 100%;
-        border-bottom: 1px solid theme.$black-25-variant;
+        border-bottom: 1px solid theme.$grey-cc-variant;
 
         .footer-top-container {
             width: 100%;
@@ -155,13 +155,13 @@ button {
 
     .footer-main-wrapper {
         width: 100%;
-        border-bottom: 1px solid theme.$black-25-variant;
+        border-bottom: 1px solid theme.$grey-cc-variant;
 
         .footer-main-container {
             width: 100%;
             max-width: 1500px;
             padding: 4.5rem 3.25rem;
-            color: theme.$grey-99-variant;
+            color: theme.$black-44-variant;
 
             .footer-title-wrapper>div>a:not(:first-child) {
                 margin-top: 0.8rem;
@@ -169,7 +169,7 @@ button {
 
             .title {
                 font-size: 1.1rem;
-                color: theme.$grey-cc-variant;
+                color: theme.$black-fixed;
             }
 
             .newsletter {
@@ -177,11 +177,11 @@ button {
 
                 input {
                     padding: 0.7rem 1.5rem;
-                    border: 1px solid theme.$black-25-variant;
+                    border: 1px solid theme.$grey-cc-variant;
                     outline: none;
                     background-color: transparent;
                     margin-right: 20px;
-                    color: theme.$grey-99-variant;
+                    color: theme.$black-66-variant;
                 }
             }
         }
@@ -189,13 +189,13 @@ button {
 
     .footer-info-wrapper {
         width: 100%;
-        border-bottom: 1px solid theme.$black-25-variant;
+        border-bottom: 1px solid theme.$grey-cc-variant;
 
         .footer-info-container {
             width: 100%;
             max-width: 1500px;
             padding: 1.8rem 3.25rem;
-            color: theme.$grey-99-variant;
+            color: theme.$black-44-variant;
         }
 
         .footer-info-container>div:nth-child(2)>p:not(:first-child) {
@@ -209,13 +209,13 @@ button {
         .style {
             top: -1.2rem;
             left: 1.8rem;
-            color: theme.$white-variant;
-            background: theme.$black-09-variant;
+            color: theme.$black-fixed;
+            background: theme.$grey-ee-variant;
             padding: 0.5rem 1rem;
         }
 
         .title {
-            color: theme.$white-variant;
+            color: theme.$black-fixed;
             font-weight: 500;
             font-size: 1.2rem;
             margin-bottom: 0.3rem;
@@ -229,7 +229,7 @@ button {
             width: 100%;
             max-width: 1500px;
             padding: 1.8rem 3.25rem;
-            color: theme.$grey-99-variant;
+            color: theme.$black-66-variant;
 
             .payments>div svg {
                 width: auto;
@@ -240,5 +240,51 @@ button {
                 margin-left: 20px;
             }
         }
+    }
+}
+
+.hero-wrapper{
+    background: theme.$grey-ee-variant;
+    width: 100%;
+
+    .hero-container{
+        margin: 0 auto;
+        width: 100%;
+        max-width: 1500px;
+        height: 700px;
+    }
+}
+
+.features-wrapper {
+    width: 100%;
+
+    .features-container {
+        max-width: 1500px;
+        height: 700px;
+        margin: 0 auto;
+        width: 100%;
+    }
+}
+
+.usage-wrapper{
+    background: theme.$black-15-variant;
+    width: 100%;
+
+    .usage-container{
+        width: 100%;
+        margin: 0 auto;
+        height: 700px;
+        max-width: 1500px;
+    }
+}
+
+.testimony-wrapper{
+    width: 100%;
+
+    .testimony-container{
+        width: 100%;
+        margin: 0 auto;
+        height: 700px;
+        max-width: 1500px;
     }
 }
