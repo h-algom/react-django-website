@@ -15,6 +15,8 @@ import Main from "./pages/private/Main";
 
 import Missing from "./pages/public/Missing";
 
+import Test from "./pages/public/Test";
+
 const App = () => {
     return (
         <BrowserRouter>
@@ -28,6 +30,7 @@ const App = () => {
                 </Route>
                 <Route path={`/login`} element={<Login />} />
                 <Route path={`/register`} element={<Register />} />
+                <Route path={`/test`} element={<Test />} />
                 <Route path={`*`} element={<Missing />} />
             </Routes>
         </BrowserRouter>
