@@ -1,0 +1,244 @@
+@use 'flexbox';
+@use 'spacing';
+@use 'sizes';
+@use 'fonts';
+@use 'theme' as theme;
+
+$header-height: 80px;
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+.link {
+    color: theme.$link-color;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.relative {
+    position: relative;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    right: 0;
+}
+
+.top {
+    top: 0;
+}
+
+.bottom {
+    bottom: 0;
+}
+
+// shapes
+.circle{
+    border-radius: 50%;
+}
+
+// ui components
+button {
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+    border: none;
+}
+
+.btn {
+    padding: 0.7rem 1.5rem;
+    border: none;
+    background: theme.$theme-color;
+    color: theme.$black-fixed;
+}
+
+.quick-chat{
+    bottom: 30px;
+    right: 30px;
+    background: theme.$theme-color;
+    color: theme.$black-fixed;
+    border-radius: 50% 50% 0 50%;
+
+    svg{
+        width: auto;
+        height: 25px;
+    }
+}
+
+.header-wrapper{
+    width: 100%;
+    
+    .banner-wrapper {
+        margin: 0 auto;
+        width: 100%;
+        border-bottom: 1px solid #eee;
+        color: #000;
+    
+        .banner-container {
+            margin: 0 auto;
+            max-width: 1500px;
+            padding: 0.8rem 3.25rem;
+        }
+    }
+
+    .header-container{
+        margin: 0 auto;
+        width: 100%;
+        max-width: 1500px;
+        padding: 1.5rem 3.25rem;
+
+        .site-logo{
+            font-size: 1.3rem;
+        }
+
+        .nav-links {
+            color: theme.$black-44-variant;
+        }
+    }
+}
+
+.footer-wrapper {
+    width: 100%;
+    background: theme.$black-09-variant;
+    color: theme.$white-variant;
+
+    .footer-top-wrapper {
+        width: 100%;
+        border-bottom: 1px solid theme.$black-25-variant;
+
+        .footer-top-container {
+            width: 100%;
+            max-width: 1500px;
+            padding: 2rem 3.25rem;
+
+            .social-links>a:not(:first-child) {
+                margin-left: 1.2rem;
+            }
+
+            .social-links svg {
+                width: auto;
+                height: 20px;
+            }
+
+            .sub-links>a:not(:first-child) {
+                margin-left: 1.5rem;
+            }
+        }
+    }
+
+    .footer-main-wrapper {
+        width: 100%;
+        border-bottom: 1px solid theme.$black-25-variant;
+
+        .footer-main-container {
+            width: 100%;
+            max-width: 1500px;
+            padding: 4.5rem 3.25rem;
+            color: theme.$grey-99-variant;
+
+            .footer-title-wrapper>div>a:not(:first-child) {
+                margin-top: 0.8rem;
+            }
+
+            .title {
+                font-size: 1.1rem;
+                color: theme.$grey-cc-variant;
+            }
+
+            .newsletter {
+                flex: 0.4;
+
+                input {
+                    padding: 0.7rem 1.5rem;
+                    border: 1px solid theme.$black-25-variant;
+                    outline: none;
+                    background-color: transparent;
+                    margin-right: 20px;
+                    color: theme.$grey-99-variant;
+                }
+            }
+        }
+    }
+
+    .footer-info-wrapper {
+        width: 100%;
+        border-bottom: 1px solid theme.$black-25-variant;
+
+        .footer-info-container {
+            width: 100%;
+            max-width: 1500px;
+            padding: 1.8rem 3.25rem;
+            color: theme.$grey-99-variant;
+        }
+
+        .footer-info-container>div:nth-child(2)>p:not(:first-child) {
+            margin-left: 2.85rem;
+        }
+
+        .footer-info-container>div:last-child>div {
+            margin-left: 2.85rem;
+        }
+
+        .style {
+            top: -1.2rem;
+            left: 1.8rem;
+            color: theme.$white-variant;
+            background: theme.$black-09-variant;
+            padding: 0.5rem 1rem;
+        }
+
+        .title {
+            color: theme.$white-variant;
+            font-weight: 500;
+            font-size: 1.2rem;
+            margin-bottom: 0.3rem;
+        }
+    }
+
+    .footer-bottom-wrapper {
+        width: 100%;
+
+        .footer-bottom-container {
+            width: 100%;
+            max-width: 1500px;
+            padding: 1.8rem 3.25rem;
+            color: theme.$grey-99-variant;
+
+            .payments>div svg {
+                width: auto;
+                height: 35px;
+            }
+
+            .payments>div svg:not(:first-child) {
+                margin-left: 20px;
+            }
+        }
+    }
+}
