@@ -27,7 +27,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
 
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -37,7 +36,6 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    "app",
     "rest_framework",
     "corsheaders",
 ]
@@ -60,7 +58,6 @@ REST_FRAMEWORK = {
 }
 
 CORS_ORIGIN_ALLOW_ALL = True
-
 ROOT_URLCONF = "backend.urls"
 
 TEMPLATES = [
